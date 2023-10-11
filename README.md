@@ -76,9 +76,16 @@ The flying type pokemon is the most widespread amongst the secondary pokemon (ty
 9.	Which type of pokemon is the strongest overall? Which is the weakest.
 The strengths and weaknesses of the pokemon are dependent on the six base stats which adds up as the base_total. Armed with this information I used MIN and MAX functions to find the highest and lowest base total in the base total column, after which I used vlookup to find out the strongest Pokemon type (i.e having the highest base total) and the weakest (i.e the lowest base total).
 
-MAX(I2:I802) = 780               MIN(I2:I802) = 180                                                                                                              
-VLOOKUP(780,I1:T802,11,FALSE) = “psychic” type pokemon with a “genetic” classification  and named “mewtwo”                                                                                
-VLOOKUP(180,I1:T802,11,FALSE)  = grass type pokemon with a seed classification and named “sunkern”                                                                                        
+MAX(I2:I802) = 780               MIN(I2:I802) = 180                       
+
+VLOOKUP(780,I1:T802,11,FALSE) = “psychic” type pokemon with a “genetic” classification  and named “mewtwo”  
+
+ ![](V_lookup_1.png)
+
+VLOOKUP(180,I1:T802,11,FALSE)  = grass type pokemon with a seed classification and named “sunkern”  
+
+ ![](V_lookup_2.png)
+ 
 
 ## Conclusion
 In conclusion, I found this a very challenging dataset to work on as it was a totally new niche for me both field wise (gaming) and approach wise (statistics), I literally had to check up the meanings of most of the column headers and also brushing up on my basic statistics to better understand how to answer each question.
